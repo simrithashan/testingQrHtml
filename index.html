@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script>
+
+
+var fallbackToStore = function() {
+  window.location.replace('https://play.google.com/store/apps/details?id=dexapp');
+};
+var openApp = function() {
+  window.location.replace('dexapp://TimeManagementIntroductionScreen');
+};
+var triggerAppOpen = function() {
+  openApp();
+  setTimeout(fallbackToStore, 700);
+};
+
+triggerAppOpen();
+
+</script>
+</head>
+<body>
+
+</body>
+
+</html>
