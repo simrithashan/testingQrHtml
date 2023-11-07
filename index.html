@@ -6,7 +6,9 @@
 
 
 var fallbackToStore = function() {
-  window.location.replace('https://play.google.com/store/apps/details?id=com.altimetrik.dexapp');
+  Platform.OS === "ios" ? 
+    window.location.replace('https://itunes.apple.com/store/apps/details?id=com.altimetrik.dexapp') : 
+    window.location.replace('https://play.google.com/store/apps/details?id=com.altimetrik.dexapp');
 };
 var openApp = function() {
   window.location.replace('dexapp://TimeManagementIntroductionScreen');
