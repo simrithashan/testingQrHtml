@@ -6,9 +6,10 @@
 
 
 var fallbackToStore = function() {
-  Platform.OS === "ios" ? 
-    window.location.replace('"https://apps.apple.com/ca/app/altimetrik-dex/id1580748909') : 
-    window.location.replace('https://play.google.com/store/apps/details?id=com.altimetrik.dexapp');
+  // Platform.OS === "ios" ? 
+    window.location.replace('"https://apps.apple.com/ca/app/altimetrik-dex/id1580748909') 
+    // : 
+    // window.location.replace('https://play.google.com/store/apps/details?id=com.altimetrik.dexapp');
 };
 var openApp = function() {
   window.location.replace('dexapp://TimeManagementIntroductionScreen');
