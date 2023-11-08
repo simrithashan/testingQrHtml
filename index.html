@@ -18,8 +18,13 @@ var openApp = function() {
   window.location.replace('dexapp://LeaveManagementIntroductionScreen');
 };
 var triggerAppOpen = function() {
-  openApp();
-  setTimeout(fallbackToStore, 700);
+  // openApp();
+  // setTimeout(fallbackToStore, 700);
+
+
+
+  setTimeout(function () { window.location = "https://itunes.apple.com/ca/app/altimetrik-dex/id1580748909"; }, 25);
+    window.location = "dexapp://LeaveManagementIntroductionScreen";
 };
 
 triggerAppOpen();
