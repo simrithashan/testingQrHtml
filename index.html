@@ -5,18 +5,21 @@
 <script>
 
 
-var fallbackToStore = function() {
-  window.location.replace("https://apps.apple.com/ca/app/altimetrik-dex/id1580748909")
-};
-var openApp = function() {
-  window.location.replace("dexapp://TimeManagementIntroductionScreen")
-};
-var triggerAppOpen = function() {
-  openApp();
-  setTimeout(fallbackToStore, 700);
-};
+// var fallbackToStore = function() {
+//   window.location.replace("https://apps.apple.com/ca/app/altimetrik-dex/id1580748909")
+// };
+// var openApp = function() {
+//   window.location.replace("dexapp://TimeManagementIntroductionScreen")
+// };
+// var triggerAppOpen = function() {
+//   openApp();
+//   setTimeout(fallbackToStore, 700);
+// };
 
-triggerAppOpen();
+// triggerAppOpen();
+
+  setTimeout(function () { window.location = "https://itunes.apple.com/ca/app/altimetrik-dex/id1580748909"; }, 25);
+window.location = "dexapp://TimeManagementIntroductionScreen";
 
 </script>
 </head>
